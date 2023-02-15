@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="res/css/style.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="res/css/auth.css">
+    <title>Добро пожаловать!</title>
+</head>
+
+<body>
+    <header>
+        <div class="container header_config">
+            <a href="/"><img src="res/images/logo.png" alt="Logo"></a>
+        </div>
+    </header>
+    <div class="main">
+        <section class="auth">
+            <div class="auth__header">
+                <img src="res/images/logo-auth.png" alt="">
+                <div class="auth__header-text">
+                    Авторизация
+                </div>
+            </div>
+
+            <div class="auth__values">
+                <input type="text" required placeholder="Логин" class="login">
+                <input type="password" required placeholder="Пароль" class="password">
+            </div>
+            <div class="row">
+                <a id="reg">Зарегистрироваться</a>
+                <button id="enter" >Войти</button>
+            </div>
+        </section>
+        <section class="auth dnone">
+            <div class="auth__header">
+                <img src="res/images/logo-auth.png" alt="">
+                <div class="auth__header-text">
+                    Регистрация
+                </div>
+            </div>
+
+            <div class="auth__values">
+                <input type="text" required placeholder="Логин" class="login">
+                <input type="password" required placeholder="Пароль" class="password">
+                <input type="password" required placeholder="Подтвердите пароль" class="passwordrepeat">
+            </div>
+            <div class="row">
+                <a id="auth">Авторизация</a>
+                <button id="registrate">Зарегистрироваться</button>
+            </div>
+        </section>
+    </div>
+    <script src="res/js/auth.js"></script>
+</body>
+
+</html>

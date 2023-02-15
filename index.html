@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="res/css/style.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>    
+    <title>Добро пожаловать!</title>
+</head>
+<body>
+    <script>
+        const url = "http://app.vst.uz/login.html";
+        if(!localStorage.getItem("login")){
+            window.location.replace(url);
+        } 
+    </script>
+    <header>
+        <div class="container header_config">
+            <a href="/"><img src="res/images/logo.png" alt="Logo"></a>
+            <a  href="/auth.php" class="header__auth">
+                <div class="header__auth"><i class="fi fi-rr-user"></i></div> 
+                <div class="header__auth-username">Username</div>
+            </a>
+                       
+        </div>
+    </header>
+    <main class="main__config">
+        <aside class="main__config-nav">
+            <div class="main__config-nav-item"><i class="fi fi-rr-plus"></i> Добавить заказ</div>
+            <div class="main__config-nav-item bg-none"><i class="fi fi-rr-marker"></i> Трекинг</div>
+            <div class="main__config-nav-item"><i class="fi fi-rr-headphones"></i> Связь</div>
+        </aside>
+        <section class="form-content">
+             <div class="form">   
+                <div class="form-content__section">
+                    <div class="form-content__section-header">
+                        Куда:    
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropbtn"> Узбекистан, Ташкент </div>
+                        <div class="dropdown-content tocountry">
+                            <p>Узбекистан, Андижан</p>
+                            <p>Узбекистан, Бухара</p>
+                            <p>Узбекистан, Кашкадарья</p>
+                            <p>Узбекистан, Наманган</p>
+                            <p>Узбекистан, Ташкент</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-content__section">
+                    <div class="form-content__section-header">
+                        Откуда:    
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropbtn"> Узбекистан, Ташкент </div>
+                        <div class="dropdown-content fromcountry">
+                            <p>Узбекистан, Андижан</p>
+                            <p>Узбекистан, Бухара</p>
+                            <p>Узбекистан, Кашкадарья</p>
+                            <p>Узбекистан, Наманган</p>
+                            <p>Узбекистан, Ташкент</p>
+                            <p>Узбекистан, Фергана</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-content__section mass-input">
+                    <div class="form-content__section-header">
+                        Масса (тонна):    
+                    </div>
+                    <input class="mass" min="1" type="number">
+                </div>
+                <div class="form-content__section mass-input">
+                    <div class="form-content__section-header">
+                        Поле для комментариев:  
+                    </div>
+                    <textarea class="comment"></textarea>
+                </div>
+                <button id="send">Отправить</button>
+                
+            </div>
+            <div class="form-content__section-header">
+                Предыдущие заказы:    
+            </div>
+            <table class="table" border="1">
+                <tr>
+                    <td>№</td>
+                    <td>Откуда</td>
+                    <td>Куда</td>
+                    <td>Масса</td>
+                    <td>Время</td>
+                </tr>
+               
+            </table>
+        </section>       
+    </main>
+    <script src="res/js/main.js"></script>
+</body>
+</html>
